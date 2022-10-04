@@ -1,0 +1,7 @@
+AuthName "second-dev.app.prod.fuznet.com statistics"
+AuthType Basic
+AuthUserFile /home/second-dev.app.prod.fuznet.com/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>
